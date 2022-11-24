@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>LOVE！</title>
+  <style>
+      html,body{
+	      height: 100%;
+	  }
+      body{
+	      overflow:hidden;
+		  background:url(images/1.jpg) center/cover;
+	      margin: 0;
+	  }
+      .heart{
+	       position: relative;
+           width: 200px;
+	       height: 200px;
+	       margin: 50px auto;
+	  }
+	  .snowfall-flakes:before,
+	  .snowfall-flakes:after{
+	       content:'';
+		   position: absolute;
+		   top: 0;
+		   left: 0;
+	       width: 10px;
+	       height: 16px;
+	       background-color: red;
+	       border-radius: 5px 5px 0 0;
+	  }
+	  .snowfall-flakes:before{
+	       transform: rotate(-45deg);
+	  }
+	  .snowfall-flakes:after{
+	       transform: translateX(4.3px) rotate(45deg);
+	  }
+  </style>
+ </head>
+ <body>
+	 <script src="js/jquery-1.2.6.min.js"></script>
+	 <script src="js/snowfall.jquery.js"></script>
+	 <script>
+	     $(document).snowfall({flakeCount : 100, maxSpeed : 2});
+	 </script>
+ </body>
+</html>
